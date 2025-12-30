@@ -1,9 +1,14 @@
 
+#include <vector>
+#include <unordered_map>
+
+using namespace std;
+
 class Solution {
 public:
-    std::vector<int> twoSum(std::vector<int>& nums, int target){
+    vector<int> twoSum(vector<int>& nums, int target){
         // Create an unordered_map to store numbers and their corresponding indices
-        std::unordered_map<int, int> numToIndexMap;
+        unordered_map<int, int> numToIndexMap;
         // Loop through the array
         for (int i = 0; i < nums.size(); i++) {
             // Calculate the difference between the target and the current number
